@@ -6,8 +6,7 @@
 # 5 6 -> 2 3
 s , p = int(input("Cумма  чисел ")) , int(input("Произведение  чисел "))
 
-from math import *
-# x**2-s*x+p=0
+
 d = s**2 - 4 * p
 if d >= 0:
     x = (s+d**0.5)/2 
