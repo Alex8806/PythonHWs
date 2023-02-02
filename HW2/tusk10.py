@@ -9,7 +9,9 @@ count0, count1 = 0 , 0
 for i in range(n):
     storona = 2
     while storona != 1 and storona != 0 :
-        storona = int(input("Как повернута монетка 0-решка, 1 орел? " ))
+        storona = int(input("Как повернута монетка 0-решка, 1-орел? " ))
+        if storona != 1 and storona != 0:
+            print("Ошибка. Попробуй еще раз!")
     if storona == 1: count1 += 1
     elif storona == 0: count0 += 1
 if count1 != count0:
