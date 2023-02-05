@@ -37,6 +37,7 @@ if word[0] in eng:
         elif word[i] not in eng:
             print("В слове есть нечитаемые символы!!!!!")
             exit()
+        count += dic[word[i]]
 
 elif word[0] in rus:
     dic = rus
@@ -47,10 +48,9 @@ elif word[0] in rus:
         elif word[i] not in rus:
             print("В слове есть нечитаемые символы!!!!!")
             exit()
+        count += dic[word[i]]
 else:
     print("В слове есть нечитаемые символы!!!!!")
     exit()
-            
-for i in range(len(word)):
-    count += dic[word[i]]
+
 print(count, "очков")
