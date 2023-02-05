@@ -13,8 +13,8 @@ for i in range(n):
     list.append(random.randint(0, 10))
 print(list)
 x = int(input('Искомое число '))
-dif, bliz = abs(list[0]-x), list[0]
+dif, closest = abs(list[0]-x), list[0]
 for i in range(len(list)):
     if abs(list[i]-x) < dif:
-        dif, bliz = abs(list[i]-x), list[i]
-print(bliz, "- Cамый близкий по величине элемент к заданному числу -", x)
+        dif, closest = abs(list[i]-x), list[i]
+print(closest, "- Cамый близкий по величине элемент к заданному числу -", x)
