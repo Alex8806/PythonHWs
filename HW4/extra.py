@@ -41,6 +41,7 @@ def matching(list):
         print(f"Уничтожено {count+2} шарикa")
     else:
         print("Совпадений нет")
+        count=0
     return list,count
 
 
