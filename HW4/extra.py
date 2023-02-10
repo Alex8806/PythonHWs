@@ -41,11 +41,13 @@ def matching(list):
         print(f"Уничтожено {count+2} шарикa")
     else:
         print("Совпадений нет")
-    return list
+    return list,count
 
 
 list = filling(m)
 print("Выпали шарики", list)
+totalcount=0
 while (name := input("Для проверки напишите  'check' ") == 'check'):
-    list = matching(list)
-    print("Остались шарики ", list)
+    list,count = matching(list)
+    totalcount+=count+2
+    print("Остались шарики ", list ,  "всего уничтожено ", totalcount)
