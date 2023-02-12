@@ -24,6 +24,7 @@ def filling(p):
     list = []
     for i in range(p):
         list.append(random.randint(0, 1))
+        # list.append(int(input()))
     return list
 
 
