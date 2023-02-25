@@ -26,6 +26,7 @@ if (input("Хотите перезаписать input.txt (YES/NO) - ").upper()
     list = [input(f'Вваедите {i+1} элемент - ') for i in range(int(n))]
     data.writelines(' '.join(list))
     data.close()
+{'misha':{'phone': ['+79115282','+4863'] , 'name': 'T', 'surname':""}}
 
 with open('HW5/input.txt', 'r') as data:
     n = int(data.readline())
