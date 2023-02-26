@@ -5,7 +5,7 @@ def search_value(book):
     dic = {'0': "any", '1': 'name', '2': 'phone',
            '3': 'birthday', '4': 'email'}
     s = input(
-        "Do you wanna search by:\n '0': any \n '1' : 'name'\n '2':'phone' \n '3':'birthday' \n '4':'email'\n- ")
+        "Do you wanna search by:\n '0': any \n '1':'name'\n '2':'phone' \n '3':'birthday' \n '4':'email'\n- ")
     value = input("What to search? ")
     if s in "234":
         x = searchByColum(book, dic[s], value)
@@ -53,11 +53,11 @@ def search_any(book, word):
         if word.lower() in k.lower():
             print(f"'{word}' found in name - '{k}'")
             mk_pr.print_values(book, k)
-            flag = True
+            if flag != True:flag = True
         for i in v.keys():
             tempBook = {}
             tempBook[k] = book[k]
-            flag = searchByColum(tempBook, i, word, any="yes")
-
+            f = searchByColum(book=tempBook,colum= i,value= word, any="yes")
+            if f == True: flag=f
     if flag == False:
         print("Nothing found")

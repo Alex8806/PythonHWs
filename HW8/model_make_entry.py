@@ -21,7 +21,6 @@ def checInt(entry, max, min=0, message=None):
         if message != None:
             print(message)
         print(f'{entry} more than max {max}')
-        flag = False
         return False
     if entry < min:
         if message != None:

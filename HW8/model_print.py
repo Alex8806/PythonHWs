@@ -11,7 +11,7 @@ def print_book(book):
 
 def print_names(book):
     i = 1
-    for k, v in book.items():
+    for k in book.keys():
         print(i, "-", k)
         i+=1
 
